@@ -15,7 +15,12 @@ public class Main {
         curso2.getDescricao("descricao curso js");
         curso2.setCargaHoraria(4);
 
-        Mentoria mentoria = new Mentoria();
+        Mentoria mentoria = new Mentoria() {
+            @Override
+            public double calcularXp() {
+                return 0;
+            }
+        };
         mentoria.setTitulo("mentoria java");
         mentoria.setDescricao("descricao mentoria java");
         mentoria.setDate(LocalDate.now());

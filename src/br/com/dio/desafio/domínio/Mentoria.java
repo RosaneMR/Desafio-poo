@@ -2,7 +2,7 @@ package br.com.dio.desafio.domínio;
 
 import java.time.LocalDate;
 
-public class Mentoria {
+public abstract class Mentoria extends Conteudo{
     private String titulo;
     private String descricao;
     private LocalDate date;
